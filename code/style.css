@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.navbar {
+  background-color: #fff;
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2.8px;
+}
+
+nav li a:hover {
+  text-shadow: 1px 1px 4px #555555;
+}
+
+.nav-logo {
+  float: left;
+  margin: 5px 0 5px 5px;
+  width: 77px;
+  overflow: hidden;
+}
+
+.nav-logo img {
+  width: 100%;
+}
+
+.nav-links {
+  float: left;
+  margin: 15px 10px 0;
+}
+
+.hamburger {
+  display: none;
+  margin: 18px 19px 0 0;
+}
+
+.icon-bar {
+  border-radius: 1px;
+  width: 22px;
+  height: 2px;
+  background-color: #000;
+  margin: 4px 0;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    text-align: center;
+    background-color: #999999;
+    overflow: hidden;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hack as the videos have black bars on them */
+#heroVideoSmall {
+  height: 680px;
+  margin-top: -90px;
+}
+
+#heroVideoMedium {
+  height: 680px;
+  margin-top: -90px;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+@media (max-width: 600px) {
+
+  #heroVideoMedium {
+    display: none;
+  }
+
+  #heroVideoBig{
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+  html {
+    background: red;
+  }
+
+  #heroVideoSmall {
+    display: none;
+  }
+
+  #heroVideoBig {
+    display: none;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+}
+
+@media (min-width: 900px) {
+
+  html {
+    background: green;
+  }
+
+  #heroVideoSmall {
+    display: none;
+  }
+
+  #heroVideoMedium {
+    display: none;
+  }
+
+}
