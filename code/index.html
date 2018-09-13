@@ -17,34 +17,34 @@
         <div class="nav-logo">
           <img src="images/logo.jpg" />
         </div>
+        <div class="hamburger">
+          <a href="javascript:void(0);" onclick="hamburgerMenu()">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+          </a>
+        </div>
           <div class="nav-links">
             <ul>
               <li>
                 <a href="#">Home</a>
               </li>
               <li>
-                <a>About</a>
+                <a href="#">About</a>
               </li>
               <li>
-                <a>Videos</a>
+                <a href="#">Videos</a>
               </li>
               <li>
-                <a>Press</a>
+                <a href="#">Press</a>
               </li>
               <li>
-                <a>Jobs</a>
+                <a href="#">Jobs</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="#">Contact</a>
               </li>
             </ul>
-          </div>
-          <div class="hamburger">
-            <a href="javascript:void(0);" onclick="hamburgerMenu()">
-              <div class="icon-bar"></div>
-              <div class="icon-bar"></div>
-              <div class="icon-bar"></div>
-            </a>
           </div>
         </div>
     </nav>
@@ -65,27 +65,29 @@
       <source src="videos/SampleVideo_360x240_1mb.mp4" type="video/mp4" />
        <p>This browser doesn´t support video</p>
     </video>
-    <button id="myBtn" onclick="myFunction()">Pause</button>
+    <div id="myBtn" onclick="buttonClick()">
+      <img id="buttonImg" src="images/pause.png" height="32" />
+    </div>
 
   </div>
 
   <script>
-    function myFunction() {
+    function buttonClick() {
       var videoBig = document.getElementById("heroVideoBig");
       var videoMedium = document.getElementById("heroVideoMedium");
       var videoSmall = document.getElementById("heroVideoSmall");
-      var btn = document.getElementById("myBtn");
+      var btn = document.getElementById("buttonImg");
 
-      if (videoBig.paused) {
+      if (videoBig.paused && videoMedium.paused && videoSmall.paused) {
           videoBig.play();
           videoMedium.play();
           videoSmall.play();
-          btn.innerHTML = "Pause";
+          btn.src = "images/pause.png";
       } else {
           videoBig.pause();
           videoMedium.pause();
           videoSmall.pause();
-          btn.innerHTML = "Play";
+          btn.src = "images/play.png";
       }
     }
 
