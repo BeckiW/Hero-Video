@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Sprint 1: Hero video assignment</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sprint 1: Hero video assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
 
-  <body>
-
-  <!-- place your code here -->
+<body>
 
   <header>
     <nav>
@@ -17,13 +16,13 @@
         <div class="nav-logo">
           <img src="images/logo.jpg" />
         </div>
-        <div class="hamburger">
-          <a href="javascript:void(0);" onclick="hamburgerMenu()">
+          <div class="hamburger">
+            <a href="javascript:void(0);" onclick="hamburgerMenu()">
             <div class="icon-bar"></div>
             <div class="icon-bar"></div>
             <div class="icon-bar"></div>
           </a>
-        </div>
+          </div>
           <div class="nav-links">
             <ul>
               <li>
@@ -69,40 +68,41 @@
       <img id="buttonImg" src="images/pause.png" height="32" />
     </div>
 
-  </div>
 
-  <script>
-    function buttonClick() {
-      var videoBig = document.getElementById("heroVideoBig");
-      var videoMedium = document.getElementById("heroVideoMedium");
-      var videoSmall = document.getElementById("heroVideoSmall");
-      var btn = document.getElementById("buttonImg");
+    </div>
 
-      if (videoBig.paused && videoMedium.paused && videoSmall.paused) {
+    <script>
+      function buttonClick() {
+        var videoBig = document.getElementById("heroVideoBig");
+        var videoMedium = document.getElementById("heroVideoMedium");
+        var videoSmall = document.getElementById("heroVideoSmall");
+        var btn = document.getElementById("buttonImg");
+
+        if (videoBig.paused && videoMedium.paused && videoSmall.paused) {
           videoBig.play();
           videoMedium.play();
           videoSmall.play();
           btn.src = "images/pause.png";
-      } else {
+        } else {
           videoBig.pause();
           videoMedium.pause();
           videoSmall.pause();
           btn.src = "images/play.png";
+        }
       }
-    }
 
-    function hamburgerMenu() {
-      var x = document.getElementById("top-navbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
+      function hamburgerMenu() {
+        var x = document.getElementById("top-navbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
       }
-    }
-
-  </script>
+    </script>
 
 
 
-  </body>
+</body>
+
 </html>

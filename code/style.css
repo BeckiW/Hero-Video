@@ -1,11 +1,11 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial;
-    font-size: 17px;
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
 }
 
 .navbar {
@@ -69,12 +69,12 @@ nav li a:hover {
 }
 
 .hero {
-    position: relative;
-    width: 100vw;
-    height: 500px;
-    text-align: center;
-    background-color: #999999;
-    overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 500px;
+  text-align: center;
+  background-color: #999999;
+  overflow: hidden;
 }
 
 .hero video {
@@ -95,41 +95,39 @@ nav li a:hover {
 }
 
 .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
 #myBtn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 60px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #fff;
-    color: #000;
-    cursor: pointer;
-    z-index: 10;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  z-index: 10;
 }
 
 #myBtn:hover {
-    background: #ddd;
-    color: black;
+  background: #ddd;
+  color: black;
 }
 
-
 @media (max-width: 600px) {
-
   #heroVideoMedium {
     display: none;
   }
 
-  #heroVideoBig{
+  #heroVideoBig {
     display: none;
   }
 
@@ -141,6 +139,7 @@ nav li a:hover {
     float: right;
     display: block;
   }
+
   .icon-bar {
     display: block;
     width: 22px;
@@ -162,7 +161,7 @@ nav li a:hover {
     z-index: 100;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
 
   .navbar.responsive ul {
@@ -172,12 +171,12 @@ nav li a:hover {
   }
 
   .navbar.responsive ul li {
-      display: block;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      text-align: center;
-      margin: 0px;
-    }
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0px;
+  }
 
   .navbar.responsive ul li a {
     font-size: 14px;
@@ -186,15 +185,9 @@ nav li a:hover {
     line-height: 20px;
     text-transform: uppercase;
   }
-
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
-
-  html {
-    background: red;
-  }
-
   #heroVideoSmall {
     display: none;
   }
@@ -206,15 +199,9 @@ nav li a:hover {
   nav ul li {
     margin-right: 20px;
   }
-
 }
 
 @media (min-width: 900px) {
-
-  html {
-    background: green;
-  }
-
   #heroVideoSmall {
     display: none;
   }
@@ -222,5 +209,4 @@ nav li a:hover {
   #heroVideoMedium {
     display: none;
   }
-
 }
